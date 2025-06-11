@@ -1,0 +1,122 @@
+header{
+    display: flex;
+    height: 7vh;
+    width: 100vw;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 100;
+    min-height: max-content;
+    background-color: #E50914;
+}
+
+.header-title{
+    color: white ;
+    font-size: 1.4rem;
+    font-family: Ubuntu, Roboto, Arial;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.navbar-item a:hover{
+    color: black;
+    transition: color 0.175s;
+}
+
+@media (max-width: 1023px){
+    .specialization,
+    .header-title{
+        opacity: 0;
+    }
+
+    .menu-button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu-icon{
+        width: 28px;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+
+    .left-header{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .right-header{
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title{
+        display: flex;
+        opacity: 1;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        width: 95vw;
+        left: 1.5rem;
+        right: 1.5rem;
+        border-radius: 50px;
+        margin: 1rem auto 0 auto;
+    }
+
+    .left-header{
+        display: flex;
+        width: 35vw;
+        align-items: center;
+        min-width: max-content;
+    }
+
+
+    .right-header{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .navbar-menu{
+        list-style: none;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        min-width: max-content;
+        justify-content: right;
+        gap: 75px;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .right-header a{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .specialization,
+    .header-title{
+        font-size: 1.4rem;
+    }
+
+    .specialization{
+        font-weight: 300;
+        padding-right: 20px;
+        opacity: 1;
+        color: white;
+    }
+
+    .menu-button{
+        opacity: 0;
+    }
+
+}
