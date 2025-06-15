@@ -5,16 +5,16 @@ header{
     font-size: 1rem;
     position: fixed;
     z-index: 100;
-    min-height: max-content;
-    background-color: #E50914;
+    background-color: #b55211;
+    
+    padding: 3.5vh 5vw;
+    min-height: 3vh;
 }
 
 .header-title{
     color: white ;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: Ubuntu, Roboto, Arial;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
 }
 
 .navbar-item a:hover{
@@ -64,10 +64,12 @@ header{
 @media (min-width: 1024px){
     header{
         width: 95vw;
+        border-radius: 50px;
+        margin: 0.8rem auto 0 auto;
+
+        position: fixed;
         left: 1.5rem;
         right: 1.5rem;
-        border-radius: 50px;
-        margin: 1rem auto 0 auto;
     }
 
     .left-header{
@@ -94,18 +96,17 @@ header{
         min-width: max-content;
         justify-content: right;
         gap: 75px;
-        padding-right: 5rem;
         padding-left: 5rem;
     }
 
-    .right-header a{
-        font-size: 1.4rem;
+    .navbar-item{
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
     .specialization,
     .header-title{
-        font-size: 1.4rem;
+        font-size: 0.85em;
     }
 
     .specialization{
@@ -116,7 +117,7 @@ header{
     }
 
     .menu-button{
-        opacity: 0;
+        display: none;
     }
 
 }

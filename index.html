@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="/src/styles/base.css">
         <link rel="stylesheet" href="/src/styles/header.css">
+        <link rel="stylesheet" href="/src/styles/hero-section.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 
             <nav class="right-header">
                 <button class="menu-button" aria-label="menu-button" aria-expanded="false">
-                    <img class="menu-icon" src="/public/icons/hamburger-menu.svg" alt="Menu">
+                    <img class="menu-icon" src="/public/icons/hamburger-menu.svg" alt="Menu" draggable="false" oncontextmenu="return false">
                 </button>
                 <ul class="navbar-menu">
                     <li class="navbar-item"><a href="#hero-section">Home</a></li>
@@ -34,7 +35,36 @@
 
         <main>
             <section class="hero-section">
-
+                <div class="upper-hero-section">
+                    <h3 class="greetings">Hi there! I am</h3>
+                    <h1 class="name">KEN CEDRICK A. JIMENO</h1>
+                    <p class="my-desc">
+                        Software engineer in the making with a passion for innovation and impact. Dedicated to continuous growth, collaborative development, and building digital solutions that truly matter.
+                    </p>
+                    <div class="button-container">
+                        <button class="download-button">
+                            Download CV
+                        </button>
+                        <a href="https://www.linkedin.com/in/devcedrick/" target="_blank" class="linkedin-button">
+                            <button class="linkedin-button">
+                            <img class="linkedin-icon" alt="LinkedIn Button" src="/public/icons/linkedin-outlined.svg" oncontextmenu="return false">
+                            <img class="linkedin-filled-icon" alt="LinkedIn Button" src="/public/icons/linkedin-filled.svg" draggable="false" oncontextmenu="return false">
+                        </button>
+                        </a>
+                        <a href="https://github.com/devcedrick" target="_blank" class="github-button">
+                            <button class="github-button">
+                            <img class="github-filled-icon"alt="GitHub Button" src="/public/icons/github-filled.svg" draggable="false" oncontextmenu="return false">
+                            <img class="github-icon"alt="GitHub Button" src="/public/icons/github-outlined.svg" draggable="false" oncontextmenu="return false">
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-pic">
+                    <figure class="hero-img-container">
+                        <img class="hero-img-mobile" src="/public/illustrations/hero-pic-mobile.svg" alt="Portrait of Ken Cedrick Jimeno" draggable="false" oncontextmenu="return false">
+                        <img class="hero-img-pc" src="/public/illustrations/hero-pic-pc.svg" alt="Portrait of Ken Cedrick Jimeno" draggable="false" oncontextmenu="return false">
+                    </figure>
+                </div>
             </section>
         </main>
     </body>

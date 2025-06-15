@@ -1,0 +1,256 @@
+.hero-section{
+    position: relative;
+    height: calc(100vh - 7vh - 4px);
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: url('/public/illustrations/hero-bg-2.svg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.upper-hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position:  relative;
+    height: calc((100vh - 7vh - 4px) * 0.60);
+    padding: 13vh 3vw;
+}
+
+.hero-pic{
+    height: calc((100vh - 7vh - 4px) * 0.40);
+    width: 60vw;
+    overflow: hidden;
+}
+
+@media (max-wdith: 1023px){
+    .hero-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        max-width: 100%;
+        height: inherit;
+        overflow: hidden;
+    }
+}
+
+.hero-img-container{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        max-width: 100%;
+        height: calc((100vh - 7vh - 4px) * 0.40);
+        overflow: hidden;
+}
+
+.hero-img-mobile{
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.35);
+    transform-origin: center bottom;
+    max-width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+.hero-img-pc{
+    display: none;
+}
+
+.greetings{
+    display: block;
+    margin: 0.3rem 2rem;
+    font-weight: 400;
+    font-size: 1.3rem
+}
+
+.name{
+    display: block;
+    margin: 0.3rem 2rem;
+    font-size: 1.6rem;
+    color: #F09410;
+}
+
+.my-desc{
+    display: block;
+    margin: 0.5rem 2rem;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    margin: 1.5rem;
+    gap: 4vw;
+}
+
+.download-button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid #F09410;
+    background-color: #F09410;
+
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+}
+
+.download-button:active{
+    background-color: #CC7E0E;
+    transform: scale(1.05);
+    transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.linkedin-icon,
+.github-icon{
+    display: none;
+}
+
+.github-filled-icon,
+.linkedin-filled-icon{
+    height: 75%;
+    width: auto;
+}
+
+.linkedin-button,
+.github-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 1px solid #F09410;
+    border-radius: 50%;
+}  
+
+@media (min-width: 1024px){
+    .hero-section{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 60vw 40vw;
+
+        padding: 0;
+    }
+
+    .upper-hero-section,
+    .hero-pic{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .upper-hero-section{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 60vw;
+        height: 100vh;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .hero-img-pc{
+        display: inline;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .hero-img-mobile{
+        display: none;
+        height: 1000px;
+    }
+
+    .hero-img-container{
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .greetings{
+        font-size: 1rem;
+    }
+
+    .name{
+        font-size: 2.625rem;
+    }
+
+    .my-desc{
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+
+    .button-container{
+        gap: 2vw;
+    }
+
+    .button-container{
+        height: 8vh;
+    }
+
+    .download-button{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        font-size: 0.8rem;
+
+        padding: 0.4rem 2rem;
+        width: 50%;
+    }
+
+    .download-button:hover{
+        cursor: pointer;
+        background-color: #CC7E0E;
+        transform: scale(1.05);
+        transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+    }
+
+    .linkedin-button,
+    .github-button{
+        height: 80%;
+        aspect-ratio: 1;
+    }
+
+    .linkedin-button:hover,
+    .github-button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: display 200ms ease-in-out, transform 200ms ease-in-out;
+
+        .github-filled-icon,
+        .linkedin-filled-icon{
+            display: none;
+        }
+
+        .github-icon,
+        .linkedin-icon{
+            display: inline-block;
+            height: 75%;
+            width: auto;
+        }
+        
+    }
+
+}
