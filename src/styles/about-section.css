@@ -1,36 +1,42 @@
 .about-section{
-    height: 100vh;
+    height: calc(100vh + 3rem);
     width: 100%;
+    background-image: url(/public/illustrations/about-header-bg.svg);
 }
 
 .upper-about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-
-    background-color: #F09410;
-
-    height: 35vh;
-
-    padding: 2rem;
+    justify-content: flex-start;
+    gap: 1.8rem;
+    height: 45vh;
 }
 
 .lower-about{
-    height: 65vh;
-    background-image: url(/public/illustrations/about-header-bg.svg);
+    height: 55vh;
 }
 
 .about-header{
-    font-size: 3.5rem;
-    color: black;
+    font-size: 4rem;
+    color: white;
+}
+
+.header-emphasis{
+    color: #F09410;
 }
 
 .about-subheader{
     display: flex;
     font-weight: 200;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    font-style: italic;
     text-align: center;
+    align-self: top;
     line-height: 0.8rem;
+
+    width: 100%;
+    padding: 1.15rem 15rem;
+    background-color: #F09410;
+    color: black;
 }
