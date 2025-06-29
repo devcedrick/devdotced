@@ -14,7 +14,12 @@
 }
 
 .lower-about{
-    height: 55vh;
+    height: calc(55vh + 3rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.2rem;
+
 }
 
 .about-header{
@@ -39,4 +44,25 @@
     padding: 1.15rem 15rem;
     background-color: #F09410;
     color: black;
+}
+
+.about-subheader-2{
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-top: -0.7rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+.basinfo-button,
+.why-button,
+.skillevol-button{
+    width: 22%;
+    aspect-ratio: 1;
+    border-radius: calc(23% / 2);
+    border: 5px outset #F09410;
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+    background-color: #f0931032;
 }
