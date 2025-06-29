@@ -9,9 +9,10 @@ html{
 }
 
 body{
-    background-color: #29282C ;
+    background-color: #111015 ;
     padding: 0;
     margin: 0;
+    height: auto;
     position: relative;
 }
 

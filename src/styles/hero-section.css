@@ -1,11 +1,13 @@
 .hero-section{
     position: relative;
-    height: calc(100vh - 7vh - 4px);
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     background-image: url('/public/illustrations/hero-bg-2.svg');
     background-position: bottom center;
     background-size: cover;
+    
+    margin-top: -9.5vh;
 }
 
 .upper-hero-section{
@@ -19,7 +21,7 @@
 
 .hero-pic{
     height: calc((100vh - 7vh - 4px) * 0.40);
-    width: 60vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -32,7 +34,7 @@
         max-width: 100%;
         height: inherit;
         overflow: hidden;
-    }
+    } 
 }
 
 .hero-img-container{
@@ -43,8 +45,8 @@
         width: 100%;
         max-width: 100%;
         height: calc((100vh - 7vh - 4px) * 0.40);
-        overflow: hidden;
-}
+        overflow: hidden
+    }
 
 .hero-img-mobile{
     height: 100%;
@@ -145,7 +147,7 @@
     .hero-section{
         height: 100vh;
         display: grid;
-        grid-template-columns: 60vw 40vw;
+        grid-template-columns: 60vw 39vw;
 
         padding: 0;
     }
@@ -176,17 +178,17 @@
     .hero-img-mobile{
         display: none;
         height: 1000px;
+        width: 100%;
     }
 
     .hero-img-container{
-        width: 40vw;
+        width: 100%;
         height: 100%;
         display: flex;
         position: relative;
         align-items: center;
         padding: 0;
         margin: 0;
-        overflow: hidden;
     }
 
     .greetings{

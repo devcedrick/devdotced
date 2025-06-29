@@ -1,14 +1,18 @@
 header{
     display: flex;
-    height: 7vh;
-    width: 100vw;
+    height: 5vh;
+    width: 100%;
     font-size: 1rem;
-    position: fixed;
-    z-index: 100;
+    position: sticky;
+    z-index: 1000;
     background-color: #b55211;
     
-    padding: 3.5vh 5vw;
+    top: 0;
+    
+    padding: 3.5vh 3vw;
     min-height: 3vh;
+
+    
 }
 
 .header-title{
@@ -17,12 +21,17 @@ header{
     font-family: Ubuntu, Roboto, Arial;
 }
 
+.navbar-item a{
+    color: white;
+    text-decoration: none;
+}
+
 .navbar-item a:hover{
     color: black;
     transition: color 0.175s;
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1024px){
     .specialization,
     .header-title{
         opacity: 0;
@@ -63,13 +72,18 @@ header{
 
 @media (min-width: 1024px){
     header{
-        width: 95vw;
+        width: 90%;
+        height: 5vh;
         border-radius: 50px;
         margin: 0.8rem auto 0 auto;
-
-        position: fixed;
+    
+        position: sticky;
+        top: 0rem;
         left: 1.5rem;
         right: 1.5rem;
+        
+        backdrop-filter: blur(10px);
+        background-color: rgba(181, 82, 17, 0.80);
     }
 
     .left-header{
