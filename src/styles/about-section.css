@@ -24,6 +24,7 @@
 
 .about-header{
     font-size: 4rem;
+    margin: 2rem;
     color: white;
 }
 
@@ -41,7 +42,7 @@
     line-height: 0.8rem;
 
     width: 100%;
-    padding: 1.15rem 15rem;
+    padding: 0.8rem 15rem;
     background-color: #F09410;
     color: black;
 }
@@ -49,7 +50,7 @@
 .about-subheader-2{
     font-weight: 300;
     font-size: 0.7rem;
-    margin-top: -0.7rem;
+    margin-top: -3.5rem;
     padding: 0.5rem 0.5rem;
     text-align: center;
 }
@@ -62,7 +63,39 @@
     border-radius: calc(23% / 2);
     border: 5px outset #F09410;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
     backdrop-filter: blur(8px);
     background-color: #f0931032;
+    padding: 1.3rem;
+}
+
+.button-divider{
+    width: 100%;
+    margin: 0.9rem 0;
+}
+
+.basinfo-button .button-header {
+    font-size: 1.8rem;
+    margin-left: auto;
+    text-align: left;
+}
+
+.button-header{
+    font-size: 1.8rem;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    text-align: left;
+}
+
+.modal-prev{
+    font-size: 0.65rem;
+    font-weight: 300;
+    flex: 1;
+    text-align: left;
 }
